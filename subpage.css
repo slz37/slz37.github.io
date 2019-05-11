@@ -1,16 +1,22 @@
+/* LINKS */
+a, a:visited {
+	color: #7E6693;
+	/*#477786;*/
+}
+
 /* CONTENT */
 #subtitle {
-	font-size:32px;
-	color: #CB4B16;
+	font-size:48px;
+	color: #4EB3BF;
 	-webkit-text-stroke-width: 2px;
 	-webkit-text-stroke-color: black;
 	font-family: 'Open Sans';
+	text-decoration: underline;
+	text-decoration-color: #4EB3BF;
 }
 
 #subcontent {
 	font-size:18px;
-	color: #CB4B16;
-	-webkit-text-stroke-width: 2px;
-	-webkit-text-stroke-color: black;
+	color: #FCDDA7;
 	font-family: 'Open Sans';
 }

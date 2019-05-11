@@ -14,7 +14,6 @@
 		
 		<div id="header">
 			<p class="Name">
-				Salvatore Zerbo
 			</p>
 			
 			<p class="Quote">
@@ -29,31 +28,31 @@
 		
 		<table border="1" class="tab" cellpadding="0" cellspacing="0" width="100%" align="center">
 			<tbody><tr>
-				<td width="200" class="current" style="border-width: 1px 1px 1px 1px;" nowrap="" align="center">
-				  <a onclick="clearDiv" href="javascript:void(0);">
+				<td width="200" id="Home" class="current" style="border-width: 1px 1px 1px 1px;" nowrap="" align="center">
+				  <a onclick="loadDiv('Home', './pages/home.html')" href="javascript:void(0);">
 					<div style="height:100%;width:100%">
 						Home
 					</div>
 				  </a>
 				</td>
 				
-				<td width="200" class="not_current" style="border-width: 1px 1px 1px 0;" align="center">
-				  <a onclick="loadDiv('./pages/about.html')" href="javascript:void(0);">
+				<td width="200" id="About" class="not_current" style="border-width: 1px 1px 1px 0;" align="center">
+				  <a onclick="loadDiv('About', './pages/about.html')" href="javascript:void(0);">
 					<div style="height:100%;width:100%">
 						About
 					</div>
 				  </a>
 				</td>
 				
-				<td width="200" class="not_current" style="border-width: 1px 1px 1px 0;" align="center">
-				  <a onclick="loadDiv('./files/ZerboSalvatoreResume.pdf')" href="javascript:void(0);">
+				<td width="200" id="CV" class="not_current" style="border-width: 1px 1px 1px 0;" align="center">
+				  <a onclick="loadDiv('CV', './files/ZerboSalvatoreResume.pdf')" href="javascript:void(0);">
 					<div style="height:100%;width:100%">
 						CV
 					</div
 				  </a>
 				</td>
 				
-				<td width="200" class="not_current" style="border-width: 1px 1px 1px 0;" align="center">
+				<td width="200" id="Github" class="not_current" style="border-width: 1px 1px 1px 0;" align="center">
 				  <a href="https://github.com/slz37">
 					<div style="height:100%;width:100%">
 						Github
@@ -61,7 +60,7 @@
 				  </a>
 				</td>
 				
-				<td width="200" class="not_current" style="border-width: 1px 1px 1px 0;" align="center">
+				<td width="200" id="LinkedIn" id="Home" class="not_current" style="border-width: 1px 1px 1px 0;" align="center">
 				  <a href="https://www.linkedin.com/in/salvatore-zerbo-00209412b/">
 					<div style="height:100%;width:100%">
 						LinkedIn
@@ -69,8 +68,8 @@
 				  </a>
 				</td>
 				
-				<td width="200" class="not_current" style="border-width: 1px 1px 1px 0;" align="center">
-				  <a onclick="loadDiv('./pages/sources.html')" href="javascript:void(0);">
+				<td width="200" id="Sources" class="not_current" style="border-width: 1px 1px 1px 0;" align="center">
+				  <a onclick="loadDiv('Sources', './pages/sources.html')" href="javascript:void(0);">
 					<div style="height:100%;width:100%">
 					  Sources
 					</div>
@@ -82,6 +81,9 @@
 		
 		<div id = "content_div">
 			<!-- content will be loaded here -->
+			
+			<!-- load home page as default -->
+			<iframe width="100%" height="100%" frameborder="0" src="./pages/home.html"></iframe>
 		</div>
 	</body>
 </html>

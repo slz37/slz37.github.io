@@ -1,37 +1,50 @@
-function loadDiv(link) {
+function loadDiv(event, link) {
 	/*
 	Load the html contents of the page selected by the 
 	user into the content div.
 	*/
 	
 	//Get div
-	var content_div = document.getElementById("content_div")
+	var content_div = document.getElementById("content_div");
 	
 	//Check if we are loading a pdf instead of html
 	if (link.indexOf(".pdf") !== -1){
-		content_div.innerHTML = `<TABLE align=left height="100%" width="100%" 
-									border="0" cellpadding="0" cellspacing="0">
-								<TR>
-									<TD valign=top align=center WIDTH="100%" height="1195px">
-									<iframe src="${link}" style="border:0px #FFFFFF none;" 
-										name="CV" scrolling="no" frameborder="0" 
-										marginheight="0px" marginwidth="0px" height="100%" 
-										width="100%"></iframe>
-									</TD>
-								</TR>
-								</TABLE>`
+		content_div.innerHTML = `<iframe src="${link}" style="border:0px #FFFFFF none;" 
+									name="CV" scrolling="no" frameborder="1" 
+									marginheight="0px" marginwidth="0px" height="1195" 
+									width="100%"></iframe>`;
 	}
 	else {
 		 content_div.innerHTML = `<iframe width="100%" height="100%" 
-										frameborder="0" src="${link}"></iframe>`
+										frameborder="0" src="${link}"></iframe>`;
 	}
+	
+	//Update nav bar to show selected item
+	swapClasses(event, link);
+}
+
+function swapClasses(event, link) {
+	/*
+	Swap the navigation button classes
+	to select the new one.
+	*/
+	
+	//Start with old
+	document.getElementsByClassName("current")[0].className = "not_current";
+	
+	//Now update new
+	document.getElementById(event).className = "current";
 }
 
 function clearDiv() {
 	/*
 	When the user selects to return to the homepage, clear
-	the content div of all inner html.
+	the content div of all inner html. Currently unused.
 	*/
 	
-	document.getElementById("content_div").innerHTML = '';
+	//Get div
+	var content_div = document.getElementById("content_div")
+	
+	//Now set HTML within div to nothing
+	content_div.innerHTML = '';
 }
