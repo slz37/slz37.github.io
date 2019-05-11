@@ -20,10 +20,10 @@ function loadDiv(event, link) {
 	}
 	
 	//Update nav bar to show selected item
-	swapClasses(event, link);
+	swapClasses(event);
 }
 
-function swapClasses(event, link) {
+function swapClasses(event) {
 	/*
 	Swap the navigation button classes
 	to select the new one.
