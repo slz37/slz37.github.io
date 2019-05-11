@@ -1,3 +1,25 @@
+/* PAGE BORDERS */
+html, body {
+	margin:0;
+	padding:0;
+}
+
+/* GENERIC STUFF */
+body {
+	background-color: #0D021E;
+}
+h1 {
+	color: #477786;
+}
+p {
+	color: #477786;
+    margin-top: 0px ;
+    margin-bottom: 0px ; 
+}
+a {
+	color: #477786;
+}
+
 /* BANNER IMAGE */
 #bannerimage {
 	margin:0;
@@ -11,17 +33,12 @@
 	vertical-align: top;
 }
 
+/* TITLE STUFF */
 #header {
 	position:absolute;
 	top:0px;
 }
 
-html, body {
-	margin:0;
-	padding:0;
-}
-
-/* TITLE STUFF */
 .Name {
 	font-size:64px;
 	color: #CB4B16;
@@ -83,23 +100,21 @@ html, body {
 #content_div {
 	color: #586693;
 	width: 100%;
-	height: 100px;
-	background-color: #4B76E7;
 }
 
-/* GENERIC STUFF */
-body {
-	background-color: #0D021E;
-}
-h1 {
-	color: #477786;
-}
-p {
-	color: #477786;
-    margin-top: 0px ;
-    margin-bottom: 0px ; 
+/* CONTENT */
+#subtitle {
+	font-size:32px;
+	color: #CB4B16;
+	-webkit-text-stroke-width: 2px;
+	-webkit-text-stroke-color: black;
+	font-family: 'Open Sans';
 }
 
-a {
-	color: #477786;
+#subcontent {
+	font-size:18px;
+	color: #CB4B16;
+	-webkit-text-stroke-width: 2px;
+	-webkit-text-stroke-color: black;
+	font-family: 'Open Sans';
 }
