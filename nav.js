@@ -11,10 +11,10 @@ function loadDiv(event, link) {
 	content_div.className = 'hide';
 	
 	//Wait until transition and then change content
-	window.setTimeout(setContent, 2000, event, link);
+	window.setTimeout(setContent, 1000, event, link);
 	
 	//Wait for transition and change class back to fade in
-	window.setTimeout(function() {content_div.className = 'show'}, 2000);
+	window.setTimeout(function() {content_div.className = 'show'}, 1000);
 	
 	//Update nav bar to show selected item
 	swapClasses(event);
