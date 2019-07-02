@@ -1,7 +1,7 @@
 /* PAGE BORDERS */
 html, body {
-	margin:0;
-	padding:0;
+	margin:  0;
+	padding: 0;
 }
 
 /* BACKGROUND */
@@ -11,69 +11,60 @@ body {
 
 /* BANNER IMAGE */
 #bannerimage {
-	margin:0;
-	padding:0;
-	height: 1000px;
-	width: 100%;
-	background-image: url('imgs/banner.png');
-	background-size: cover;
+	width:             100%;
+	background-image:  url('imgs/banner.png');
+	background-size:   cover;
 	background-repeat: no-repeat;
-	vertical-align: top;
+	vertical-align:    top;
 	
-	opacity: 1;
-	height: 0;
-    padding-top: 66.64%;
+	opacity:             1;
+	height:              0;
+    padding-top:         66.64%;
 	background-position: 40% 0%; 
 
-	-webkit-mask-image: linear-gradient(rgba(0,0,0,1) 0%, rgba(0,0,0,1) 40%, rgba(0,0,0,0.2) 50%, rgba(0,0,0,0) 100%);
-	mask-image: linear-gradient(rgba(0,0,0,1) 0%, rgba(0,0,0,1) 40%, rgba(0,0,0,0.2) 50%, rgba(0,0,0,0) 100%);
+	-webkit-mask-image: linear-gradient(rgba(0,0,0,1) 0%, 
+						rgba(0,0,0,1) 40%, rgba(0,0,0,0.2) 50%, rgba(0,0,0,0.15) 55%, 
+						rgba(0,0,0,0.1) 60%, rgba(0,0,0,0.01) 95%, rgba(0,0,0,0) 100%);
+	mask-image:         linear-gradient(rgba(0,0,0,1) 0%, 
+	                    rgba(0,0,0,1) 40%, rgba(0,0,0,0.2) 50%, rgba(0,0,0,0.15) 55%, 
+						rgba(0,0,0,0.1) 60%, rgba(0,0,0,0.01) 95%, rgba(0,0,0,0) 100%);
 }
 
 /* TITLE STUFF */
 #header {
-	position:absolute;
-	top:0px;
+	position: absolute;
+	top:      0px;
 }
-
-/* UNUSED
-.Name {
-	font-size:64px;
-	color: #CB4B16;
-	-webkit-text-stroke-width: 2px;
-	-webkit-text-stroke-color: black;
-	font-family: 'Open Sans';
-}
-*/
 
 .Quote {
-	font-size:40px;
-	color: #C76F3B;
+	font-size:                 40px;
+	color:                     #C76F3B;
 	-webkit-text-stroke-width: 1px;
 	-webkit-text-stroke-color: black;
-	font-family: 'Open Sans';
+	font-family:               'Open Sans';
 }
 
 .Author {
-	position: relative;
-	top: -40px;
-	text-indent: 65%;
-	font-size:40px;
-	color: #C76F3B;
+	position:                  relative;
+	top:                       -40px;
+	text-indent:               65%;
+	font-size:                 40px;
+	color:                     #C76F3B;
 	-webkit-text-stroke-width: 1px;
 	-webkit-text-stroke-color: black;
-	font-family: 'Open Sans';
+	font-family:               'Open Sans';
 }
 
 /* NAVIGATION MENU */
 .tab {
 	position: absolute;
-	top: 875px;
+	top:      620px;
 }
 .tab a:link, .tab a:visited {
-	font-size:32px;
+	font-size:    32px;
 	border-color: #003C49;
-	border-size: 2px;
-	font-family: 'Open Sans';
+	border-size:  2px;
+	font-family:  'Open Sans';
 }
 
 .current a, .current a:visited{
@@ -81,11 +72,11 @@ body {
 }
 
 .current:hover, .current:hover a {
-	background-color: #4B76E7 !important;
-	color: #E45ED9;
-	-moz-transition: .2s linear;
+	background-color:   #4B76E7 !important;
+	color:              #E45ED9;
+	-moz-transition:    .2s linear;
 	-webkit-transition: .2s linear;
-	-o-transition: .2s linear;
+	-o-transition:      .2s linear;
 }
 
 .not_current a, .not_current a:visited{
@@ -93,23 +84,24 @@ body {
 }
 
 .not_current:hover, .not_current:hover a {
-	background-color: #4B76E7 !important;
-	color: #E45ED9;
-	-moz-transition: .2s linear;
+	background-color:   #4B76E7 !important;
+	color:              #E45ED9;
+	-moz-transition:    .2s linear;
 	-webkit-transition: .2s linear;
-	-o-transition: .2s linear;
+	-o-transition:      .2s linear;
 }
 
 /* CONTENT DIV */
 #content_div {
 	position: absolute;
-	top: 975px;
-	width: 100%;
+	top:      715px;
+	width:    100%;
+	display:  table;
 }
 
 /* FADE IN CONTENT DIV */
 .show {
-  -webkit-animation: fadein 1s; /* Safari, Chrome and Opera > 12.1 */
+  -webkit-animation:   fadein 1s; /* Safari, Chrome and Opera > 12.1 */
        -moz-animation: fadein 1s; /* Firefox < 16 */
         -ms-animation: fadein 1s; /* Internet Explorer */
          -o-animation: fadein 1s; /* Opera < 12.1 */
@@ -147,7 +139,7 @@ body {
 
 /* FADE OUT CONTENT DIV */
 .hide {
-  -webkit-animation: fadeout 1s; /* Safari, Chrome and Opera > 12.1 */
+  -webkit-animation:   fadeout 1s; /* Safari, Chrome and Opera > 12.1 */
        -moz-animation: fadeout 1s; /* Firefox < 16 */
         -ms-animation: fadeout 1s; /* Internet Explorer */
          -o-animation: fadeout 1s; /* Opera < 12.1 */

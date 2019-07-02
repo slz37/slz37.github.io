@@ -1,22 +1,29 @@
 /* LINKS */
 a, a:visited {
 	color: #7E6693;
-	/*#477786;*/
 }
 
 /* CONTENT */
 #subtitle {
-	font-size:48px;
-	color: #4EB3BF;
+	font-size:                 48px;
+	color:                     #4EB3BF;
 	-webkit-text-stroke-width: 2px;
 	-webkit-text-stroke-color: black;
-	font-family: 'Open Sans';
-	text-decoration: underline;
-	text-decoration-color: #4EB3BF;
+	font-family:               'Open Sans';
+	text-decoration:           underline;
+	text-decoration-color:     #4EB3BF;
 }
 
 #subcontent {
-	font-size:18px;
-	color: #FCDDA7;
+	font-size:   18px;
+	color:       #FCDDA7;
+	font-family: 'Open Sans';
+	width:       75%;
+	margin:      0 auto;
+}
+
+table {
+	color:       #ff748c;
+	font-size:   18px;
 	font-family: 'Open Sans';
 }

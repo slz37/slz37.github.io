@@ -3,6 +3,7 @@
 	<link rel="stylesheet" href="main.css">
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 	<script src="nav.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 	
 	<head>
 		<title>Salvatore Zerbo</title>
@@ -45,7 +46,7 @@
 				</td>
 				
 				<td width="200" id="CV" class="not_current" style="border-width: 1px 1px 1px 0;" align="center">
-				  <a onclick="loadDiv('CV', './files/ZerboSalvatoreResume.pdf')" href="javascript:void(0);">
+				  <a onclick="loadDiv('CV', './files/ZerboSalvatoreCV.pdf')" href="javascript:void(0);">
 					<div style="height:100%;width:100%">
 						CV
 					</div
@@ -86,12 +87,13 @@
 			  </tr>
 			</tbody>
 		</table>
-		<br />
-		<div id = "content_div" class = "show">
+		<div id = "content_div" height="100px" class = "show">
 			<!-- content will be loaded here -->
 			
 			<!-- load home page as default -->
-			<iframe width="100%" height="100%" frameborder="0" src="./pages/home.html"></iframe>
+			<script>
+				$('#Home').find('a').trigger('click');
+			</script>
 		</div>
 	</body>
 </html>
