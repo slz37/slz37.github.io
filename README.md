@@ -5,7 +5,7 @@ This is used as learning experience for HTML, CSS, JavaScript, etc. while also c
 
 Note: In order to run a local version, it's necessary to run a local server. The simplest way to do this with Python 3 is:
 ```
-Open command prompt and cd to the working directory, e.g. cd. .../slz37.github.io/
+Open command prompt and cd to the working directory, e.g. cd .../slz37.github.io/
 Run python3 -m http.server
 Open http://localhost:8000/ in your preferred browser.
 ```
