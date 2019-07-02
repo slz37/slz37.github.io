@@ -3,6 +3,13 @@ This repository contains the source code for my personal website live at https:/
 
 This is used as learning experience for HTML, CSS, JavaScript, etc. while also creating a useful site for connecting all of my material and exploring my creative side. The current state is very bare bones and has a lot of work to be done.
 
+Note: In order to run a local version, it's necessary to run a local server. The simplest way to do this with Python 3 is:
+```
+Open command prompt and CD to the working directory.
+Run python3 -m http.server
+Open http://localhost:8000/ in your browser.
+```
+
 ## Primary to-do list:
 
 * Auto resize div for pdf files.
