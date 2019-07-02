@@ -14,5 +14,3 @@ Open http://localhost:8000/ in your preferred browser.
 
 * Auto resize div for pdf files.
 * Write more about my Limit Calculator/convert that to a blog describing all of my projects in detail and other topics.
-* Add my senior thesis.
-* Make overall design more appealing.
