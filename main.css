@@ -33,7 +33,7 @@ body {
 /* TITLE STUFF */
 #header {
 	position: absolute;
-	top:      0px;
+	top:      -40px;
 }
 
 .Quote {
